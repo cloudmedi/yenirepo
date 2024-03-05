@@ -1,0 +1,100 @@
+.input-group {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	
+	background: #fff;
+	border: 1px solid #cdcdcdcd;
+	border-radius: 5px;
+	
+	height: 30px;
+	padding: 10px 15px;
+	margin-top: 20px;
+    width: 93%;
+}
+
+.input {
+	order: 2;
+	display: block;
+	width: 100%;
+	background: none;
+	border: none;
+	outline: none;
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 10px 15px 0px;
+	font-size: 22px;
+
+    color: darken(#cdcdcdcd, 100%);
+    font-size: 15px;
+}
+
+.input-label {
+	order: 1;
+	display: block;
+	width: 100%;
+	color: darken(#cdcdcdcd, 30%);
+	position: absolute;
+	font-size: 15px;
+    margin-top: 5px;
+	z-index: 0;
+	transition: margin 0.2s, font-size 0.2s;
+	font-weight: bold;
+}
+
+.input:focus + .input-label, 
+.input:valid + .input-label {
+	font-size: 10px;
+	margin-top: 0px;
+}
+
+.lp-card-form-button {
+  margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lp-button {
+    justify-content: flex-end;
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 33%;
+  }
+  
+  .lp-button:disabled {
+    cursor: default;
+  }
+  
+  .lp-button:focus {
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+  }
